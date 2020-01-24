@@ -43,21 +43,28 @@ public class reverse {
 	}
 	public static void display(Node head)
 	{
-		Node temp=head;
-		while(temp!=null)
+		if(head==null)
+			System.out.println(head);
+		else
 		{
-			System.out.println(temp.data);
+		Node temp=head;
+		while(temp.next!=null)
+		{
+			System.out.print(temp.data+"->");
 			temp=temp.next;
+		}
+		System.out.println(temp.data);
 		}
 	}
 public static void main(String args[])
 {
-	head=insertEnd(head,20);
-	head=insertEnd(head,30);
-	head=insertEnd(head,40);
-	head=insertEnd(head,50);
-	head=insertEnd(head,60);
-	head=insertEnd(head,70);
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	for(int i=0;i<n;i++)
+	{
+		int a=sc.nextInt();
+		head=insertEnd(head,a);
+	}
 	head=reverse1(head);
 	display(head);
 }
