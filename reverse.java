@@ -43,10 +43,6 @@ public class reverse {
 	}
 	public static void display(Node head)
 	{
-		if(head==null)
-			System.out.println(head);
-		else
-		{
 		Node temp=head;
 		while(temp!=null)
 		{
@@ -54,7 +50,7 @@ public class reverse {
 			temp=temp.next;
 		}
 		System.out.println(temp);
-		}
+		
 	}
 public static void main(String args[])
 {
