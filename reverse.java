@@ -48,12 +48,12 @@ public class reverse {
 		else
 		{
 		Node temp=head;
-		while(temp.next!=null)
+		while(temp!=null)
 		{
 			System.out.print(temp.data+"->");
 			temp=temp.next;
 		}
-		System.out.println(temp.data);
+		System.out.println(temp);
 		}
 	}
 public static void main(String args[])
